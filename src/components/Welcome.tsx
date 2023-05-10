@@ -189,7 +189,7 @@ export default function Welcome() {
                                         ? `Wallet address: ${account}`
                                         : "Please connect to your wallet"}
                                 </p>
-                                {txCount ? (
+                                {txCount && account ? (
                                     <p className="text-white font-semibold text-lg mt-1">
                                         There already {txCount} transactions
                                         have been sent
