@@ -1,17 +1,20 @@
 import "./App.css"
-import { Footer, Navbar, Services, Transaction, Welcome } from "./components"
+import { Footer, Navbar, Services, Welcome } from "./components"
+import { MoralisProvider } from "react-moralis"
 
 const App = () => {
     return (
-        <div className="min-h-screen">
-            <div className="gradient-bg-welcome">
-                <Navbar />
-                <Welcome />
+        <MoralisProvider initializeOnMount={false}>
+            <div className="min-h-screen">
+                <div className="gradient-bg-welcome">
+                    <Navbar />
+                    <Welcome />
+                </div>
+                <Services />
+                {/* <Transaction /> */}
+                <Footer />
             </div>
-            <Services />
-            <Transaction />
-            <Footer />
-        </div>
+        </MoralisProvider>
     )
 }
 

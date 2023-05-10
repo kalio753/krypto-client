@@ -99,6 +99,19 @@ body {
     -webkit-text-fill-color: transparent;
 }
 
+.connect-wallet-btn {
+    margin: 16px 0 !important ;
+}
+
+.connect-wallet-btn > button {
+    background-color: #2952e3;
+    width: 100%;
+}
+
+.connect-wallet-btn button span {
+    color: #fff;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
